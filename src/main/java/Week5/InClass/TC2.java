@@ -37,7 +37,6 @@ public class TC2 {
 			}
 			driver.navigate().back();  
 		}
-		
 
 		
 		driver.quit();
