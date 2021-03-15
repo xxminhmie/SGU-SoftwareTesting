@@ -18,19 +18,24 @@ public class TC1 {
 
 		String url = "https://www.google.com";
 		driver.get(url);
-		
+
 		String xpathSearch = "/html/body/div[1]/div[3]/form/div[2]/div[1]/div[1]/div/div[2]/input";
 		driver.findElement(By.xpath(xpathSearch)).sendKeys("techlistic");
-		
-		WebDriverWait wait = new WebDriverWait(driver, 20);
-		
+
+		// To Delay execution for 3 seconds . as to view the resize browser
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		String xpathListboxUl = "/html/body/div[1]/div[3]/form/div[2]/div[1]/div[2]/div[2]/ul";
 		WebElement list = driver.findElement(By.xpath(xpathListboxUl));
 		List<WebElement> rows = list.findElements(By.tagName("li"));
-		for(WebElement row : rows) {
+		for (WebElement row : rows) {
 			System.out.println(row.getText());
 		}
-		
+
 		driver.quit();
 	}
 
