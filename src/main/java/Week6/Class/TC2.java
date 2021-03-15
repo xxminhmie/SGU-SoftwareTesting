@@ -1,13 +1,10 @@
 package Week6.Class;
 
-import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class TC2 {
 	public static void main(String[] arsg) {
@@ -29,8 +26,15 @@ public class TC2 {
 		String xpathCreateBtn = "//*[@id=\"SubmitCreate\"]";
 		driver.findElement(By.xpath(xpathCreateBtn)).click();
 
-		WebElement error = driver.findElement(By.xpath("//*[@id=\"create_account_error\"]"));
-		if (error != null) {
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		Boolean error = driver.findElement(By.xpath("//*[@id=\"create_account_error\"]")).isDisplayed();
+
+		if (error == true) {
 			System.out.println("Account is created!");
 		} else {
 			// To Delay execution for 3 seconds . as to view the resize browser
@@ -66,6 +70,7 @@ public class TC2 {
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
+				System.out.println("To be continue!");
 			}
 		}
 
