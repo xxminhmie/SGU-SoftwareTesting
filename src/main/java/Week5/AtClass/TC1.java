@@ -1,4 +1,4 @@
-package Week5.InClass;
+package Week5.AtClass;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
