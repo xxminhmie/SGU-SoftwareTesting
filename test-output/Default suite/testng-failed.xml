@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Week9.Lab7.NewTest">
+      <class name="Capture.Screenshot">
         <methods>
-          <include name="testTitle"/>
+          <include name="takeSnapShot"/>
         </methods>
-      </class> <!-- Week9.Lab7.NewTest -->
+      </class> <!-- Capture.Screenshot -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
