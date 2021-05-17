@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Capture.Screenshot">
+      <class name="xxminhmie.finalproject.XSLTReport.Testing">
         <methods>
-          <include name="takeSnapShot"/>
+          <include name="Logout"/>
+          <include name="init"/>
         </methods>
-      </class> <!-- Capture.Screenshot -->
+      </class> <!-- xxminhmie.finalproject.XSLTReport.Testing -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
