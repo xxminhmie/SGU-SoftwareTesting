@@ -7,7 +7,7 @@ Lê Hồ Kim Minh - 3118410265 - Thứ 2 - Tiết 4 5
 ### Week 6  - Lab 4
 ### Week 7  - Lab 5
 ### Week 8  - Lab 6
-### Week 9  - Lab 7
+### Week 9  - Lab 7 :src/test/java - TestNG
 ### Week 10 - Lab 8
 ### Week 11 - Lab 9
 
